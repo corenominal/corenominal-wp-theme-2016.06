@@ -16,6 +16,7 @@ function corenominal_enqueue_scripts()
     /**
      * JavaScript
      */
+    wp_enqueue_script( 'modernizr_js', get_template_directory_uri() . '/js/vendor/modernizr-2.8.3.min.js', array(), false, false );
 
 }
 add_action( 'wp_enqueue_scripts', 'corenominal_enqueue_scripts' );
