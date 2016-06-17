@@ -12,6 +12,45 @@
  */
 
 /* Mobile first queries */
+body {
+    font-family: "Share Tech Mono","Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.e-content h1, .e-content h2, .e-content h3, .e-content h4, .e-content h5, .e-content h6 {
+    margin-left: -20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p, h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, pre {
+    margin-bottom: 20px;
+}
+
+blockquote {
+	padding: 0 20px;
+    margin-left: 20px;
+    border-left: 1px solid #ddd;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+blockquote .fa-quote-left {
+	position:absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 120%;
+}
 
 /* Larger than mobile */
 @media (min-width: 400px) {}
@@ -20,7 +59,11 @@
 @media (min-width: 550px) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    body {
+        font-size: 16px;
+    }
+}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}
