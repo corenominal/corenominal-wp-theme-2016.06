@@ -25,10 +25,72 @@ a:hover {
     text-decoration: underline;
 }
 
+.post h1 a,
+.post h2 a {
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+.post h1 a:hover,
+.post h2 a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+
+p.article-date {
+    margin-top: -18px;
+    font-size: 90%;
+}
+
+p.article-date a {
+    color: #999;
+}
+
+p.article-date a:hover {
+    color: #fff;
+}
+
 .e-content {
     margin:0 -20px 0 20px;
 }
 
 .e-content a {
     text-decoration: underline;
+}
+
+.e-content img {
+    width: auto;
+	height: auto;
+    max-width: 100%;
+}
+
+svg.icon {
+    width: auto;
+	height: auto;
+    max-height: 13px;
+}
+
+svg.external-link {
+    margin-left: 12px;
+}
+
+/**
+ * Utilities
+ */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.noscroll {
+	height: 100%;
+	overflow: hidden;
 }
