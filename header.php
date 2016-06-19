@@ -4,6 +4,7 @@
  */
 require get_template_directory() . '/meta.php';
 ?>
+<div class="page">
 <header class="masthead">
 <?php if( is_home() || is_front_page() ): ?>
 <h1 class="site-title"><a href="<?php bloginfo('url') ?>" title="<?php bloginfo('description') ?>"><?php bloginfo('name') ?></a></h1>

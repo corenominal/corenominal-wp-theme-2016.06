@@ -64,6 +64,10 @@ p.article-date a:hover {
     max-width: 100%;
 }
 
+.post footer .meta {
+    margin-bottom: 0;
+}
+
 svg.icon {
     width: auto;
 	height: auto;
@@ -72,6 +76,11 @@ svg.icon {
 
 svg.external-link {
     margin-left: 12px;
+}
+
+svg.icon.tags,
+svg.icon.code {
+    margin-right: 6px;
 }
 
 /**

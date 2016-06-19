@@ -48,5 +48,5 @@ add_action( 'init', 'corenominal_register_taxonomy_snippet_language' );
  */
 function corenominal_the_snippet_languages( $postid )
 {
-   the_terms( $postid, 'snippet_language', '<i class="fa fa-code"></i> <span class="sr-only">Languages: </span>', ', ', ' ' );
+   the_terms( $postid, 'snippet_language', '', ', ', ' ' );
 }
