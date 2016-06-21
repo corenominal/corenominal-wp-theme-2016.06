@@ -30,4 +30,31 @@ jQuery( document ).ready( function( $ )
             }
         }
 	});
+
+    /**
+     * Mobile menu
+     */
+    $( document ).on( 'click', '#hamburger', function(e)
+    {
+        e.preventDefault();
+        console.log( 'foo' );
+        $( this ).toggleClass( 'is-active' );
+        $( '#site-menu' ).slideToggle( 500 );
+    });
+
+    var w = $( window ).width();
+    $( window ).resize( function()
+    {
+        if ( $( window ).width()==w ) return;
+        w = $( window ).width();
+        $( '#hamburger' ).removeClass( 'is-active' );
+        if( w >= 750 )
+        {
+            $( '#site-menu' ).show();
+        }
+        else
+        {
+            $( '#site-menu' ).hide();
+        }
+    });
 });

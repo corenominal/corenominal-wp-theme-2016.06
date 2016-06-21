@@ -25,6 +25,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.site-description {
+    font-size: 90%;
+    line-height: 1.4em;
+}
+
 .post h1 a,
 .post h2 a {
     text-decoration: none;

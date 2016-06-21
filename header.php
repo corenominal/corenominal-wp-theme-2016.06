@@ -14,6 +14,12 @@ require get_template_directory() . '/meta.php';
 <?php //TODO: replace the below with a text widget ?>
 <p class="site-description"><strong><?php bloginfo('description'); ?></strong></p>
 
+<button id="hamburger" class="hamburger hamburger--spin" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+
 <nav id="site-menu" class="site-menu">
 <?php
 /**
