@@ -63,10 +63,28 @@ p.article-date a:hover {
     text-decoration: underline;
 }
 
+.e-content hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid #191919;
+    border-bottom: 0px solid #333;
+    margin-bottom: 20px;
+}
+
 .e-content img {
     width: auto;
 	height: auto;
     max-width: 100%;
+}
+
+.e-content ul li {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.e-content ol li {
+    margin-left: 20px;
+    list-style-type: decimal;
 }
 
 .post footer .meta {
@@ -86,6 +104,29 @@ svg.external-link {
 svg.icon.tags,
 svg.icon.code {
     margin-right: 2px;
+}
+
+code {
+	background-color:#191919;
+	color:#fff;
+	border:none;
+	white-space:nowrap;
+}
+
+pre {
+	white-space:pre;
+	white-space:pre-wrap;
+	background-color:#191919;
+	color:#fff;
+	border:none;
+	margin:0 0 22px 0;
+	overflow-y:auto;
+	padding:5px 10px;
+}
+pre code {
+	background:transparent;
+	border:none;
+	white-space:pre;
 }
 
 /**

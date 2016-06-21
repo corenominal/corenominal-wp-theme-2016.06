@@ -45,11 +45,20 @@ blockquote {
 blockquote p:last-child {
     margin-bottom: 0;
 }
+
 blockquote .fa-quote-left {
 	position:absolute;
 	top: 20px;
 	left: 20px;
 	font-size: 120%;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
 }
 
 /* Larger than mobile */
