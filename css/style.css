@@ -13,7 +13,7 @@
 
 body {
     background: #212121;
-    color: #ddd;
+    color: #c8c8c8;
 }
 
 a {
@@ -28,6 +28,11 @@ a:hover {
 .site-description {
     font-size: 90%;
     line-height: 1.4em;
+}
+
+.masthead h1,
+.masthead h2 {
+    display: none;
 }
 
 .post h1 a,

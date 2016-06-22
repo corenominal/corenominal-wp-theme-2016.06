@@ -6,8 +6,8 @@ require get_template_directory() . '/meta.php';
 ?>
 <div class="page">
 <header class="masthead">
-<a href="<?php bloginfo('url') ?>" title="corenominal">
-<svg id="corenominal" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="100.77" width="103.53" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 103.53185 100.76538">
+<a href="<?php bloginfo('url') ?>" title="corenominal" class="site-logo">
+<svg id="corenominal" class="corenominal" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="100.77" width="103.53" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 103.53185 100.76538">
  <metadata id="metadata3505">
   <rdf:RDF>
    <cc:Work rdf:about="">

@@ -36,6 +36,10 @@
     margin-bottom: 100px;
 }
 
+.masthead .corenominal {
+    margin-bottom: 20px;
+}
+
 .hamburger {
     position: absolute;
     top: 0;
