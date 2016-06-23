@@ -50,6 +50,10 @@
     display: none;
 }
 
+.page-footer {
+    clear: both;
+}
+
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
