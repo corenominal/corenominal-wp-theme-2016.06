@@ -50,6 +50,21 @@
     display: none;
 }
 
+.pager {
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.next_posts_link,
+.previous_posts_link {
+    width: 50%;
+    float: left;
+}
+
+.previous_posts_link {
+    text-align: right;
+}
+
 .page-footer {
     clear: both;
 }
