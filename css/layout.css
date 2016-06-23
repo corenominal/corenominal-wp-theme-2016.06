@@ -96,6 +96,10 @@
         float: left;
         width: 500px;
     }
+    .page-footer {
+        width: 500px;
+        margin-left: 250px;
+    }
 }
 
 /* Larger than desktop */
@@ -109,6 +113,10 @@
     }
     .content {
         width: 640px;
+    }
+    .page-footer {
+        width: 640px;
+        margin-left: 320px;
     }
 }
 

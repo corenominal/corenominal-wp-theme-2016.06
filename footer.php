@@ -1,6 +1,6 @@
 <footer class="page-footer">
 <p class="footer-icons"><a href="<?php echo site_url( 'copyleft' ); ?>">
-    <svg id="copyleft" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="44.286" width="44.286" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 44.285722 44.285709">
+    <svg id="copyleft" class="copyleft" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="44.286" width="44.286" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 44.285722 44.285709">
      <metadata id="metadata7">
       <rdf:RDF>
        <cc:Work rdf:about="">
