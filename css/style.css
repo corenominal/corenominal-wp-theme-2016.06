@@ -141,6 +141,16 @@ pre code {
 	white-space:pre;
 }
 
+.pager a {
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+.pager a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+
 /**
  * Utilities
  */
