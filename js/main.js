@@ -22,11 +22,16 @@ jQuery( document ).ready( function( $ )
         {
             $( this ).children('svg').remove();
             var text = $( this ).html();
+            var text_single = text;
             text = text.trim().split(' ');
             if( text.length > 1 )
             {
                 var last = text.pop();
                 return text.join(" ") + (text.length > 0 ? ' <span class="nowrap">' + last + ' ' + icon + '</span>' : last);
+            }
+            else
+            {
+                return '<span class="nowrap">' + text_single + ' ' + icon + '</span>';
             }
         }
 	});
