@@ -35,6 +35,18 @@ jQuery( document ).ready( function( $ )
             }
         }
 	});
+    /**
+	 * Prettier content links
+	 */
+    $('.e-content a:not(.e-content a:has(img))').html(function()
+ 	{
+        $( this ).addClass( 'text-link' );
+    });
+
+    $('.comments a:not(.comments a:has(img))').html(function()
+ 	{
+        $( this ).addClass( 'text-link' );
+    });
 
     /**
      * Mobile menu

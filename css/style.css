@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .site-description {
@@ -36,13 +36,17 @@ a:hover {
 }
 
 .post h1 a,
-.post h2 a {
+.post h2 a,
+a.text-link,
+.post footer a {
     text-decoration: none;
     border-bottom: 1px solid #333;
 }
 
 .post h1 a:hover,
-.post h2 a:hover {
+.post h2 a:hover,
+a.text-link:hover,
+.post footer a:hover {
     text-decoration: none;
     border-bottom: 1px solid #fff;
 }
@@ -54,10 +58,12 @@ p.article-date {
 
 p.article-date a {
     color: #999;
+    border-bottom: 1px solid #212121;
 }
 
 p.article-date a:hover {
     color: #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .e-content {
