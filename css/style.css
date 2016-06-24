@@ -64,10 +64,6 @@ p.article-date a:hover {
     margin:0 -20px 0 20px;
 }
 
-.e-content a {
-    text-decoration: underline;
-}
-
 .e-content hr {
     border: 0;
     height: 0;
@@ -96,6 +92,75 @@ p.article-date a:hover {
     margin-bottom: 0;
 }
 
+.comments {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+.comments .comment {
+	margin-bottom: 60px;
+	position: relative;
+	padding-left: 62px;
+}
+.comment .avatar {
+	position: absolute;
+	top:0;
+	left:0;
+	border: 2px solid #191919;
+}
+.commentmetadata {
+	color: #999;
+	font-size: 13px;
+}
+.comments label {
+	display:block;
+	color: #c8c8c8;
+}
+.comments textarea,
+.comments input[type="text"] {
+	border: 1px solid #c8c8c8;
+	border-radius: 0;
+	color: #c8c8c8;
+	background: #212121;
+	width: 96%;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 2%;
+	padding-right: 2%;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+    outline: 0;
+}
+.comments textarea:focus,
+.comments input[type="text"]:focus {
+	border: 2px solid #c8c8c8;
+	background: #191919;
+	outline: 0;
+	/*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 0, 0, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 0, 0, 0.6);*/
+}
+.form-submit input {
+	color: #212121;
+	background: #c8c8c8;
+	border: 1px solid #c8c8c8;
+	border-radius: 0;
+	text-align: center;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	text-transform: uppercase;
+	width: 100%;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+.form-submit input:hover {
+	background: #fff;
+    color: #212121;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+
 svg {
     width: auto;
 	height: auto;
@@ -120,7 +185,7 @@ svg.copyleft {
 
 code {
 	background-color:#191919;
-	color:#fff;
+	color:#c8c8c8;
 	border:none;
 	white-space:nowrap;
 }
@@ -129,7 +194,7 @@ pre {
 	white-space:pre;
 	white-space:pre-wrap;
 	background-color:#191919;
-	color:#fff;
+	color:#c8c8c8;
 	border:none;
 	margin:0 0 22px 0;
 	overflow-y:auto;
