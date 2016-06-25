@@ -36,6 +36,10 @@ jQuery( document ).ready( function( $ )
         }
 	});
     /**
+	 * FitVids
+	 */
+	$( '.post' ).fitVids();
+    /**
 	 * Prettier content links
 	 */
     $('.e-content a:not(.e-content a:has(img))').html(function()
