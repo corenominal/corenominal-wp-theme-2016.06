@@ -1,1 +1,5 @@
-<?php
+<aside class="sidebar">
+
+    foo
+    
+</aside>
