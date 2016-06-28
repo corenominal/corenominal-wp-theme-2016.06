@@ -10,7 +10,7 @@
  *   Twitter: @corenominal
  *   From: Lincoln, United Kingdom
  */
- jQuery( document ).ready( function( $ )
+ function do_404()
  {
 	// Cross-browser support for requestAnimationFrame
 	var requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.mozRequestAnimationFrame;
@@ -78,7 +78,7 @@
 
 		for (i = 0; i < particles.length; i++)
 		{
-			if( particles[i].life < 50 )
+			if( particles[i].life < 20 )
 			{
 				c.fillStyle = 'rgba( 255, 255, 255, 0 )';
 			}
@@ -97,5 +97,19 @@
 		requestAnimationFrame(main);
 	}
 	main();
+}
 
+jQuery( document ).ready( function( $ )
+{
+    do_404();
+    var resizeTimer;
+
+    $(window).on('resize', function(e)
+    {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function()
+        {
+            do_404();
+        }, 250);
+    });
 });
