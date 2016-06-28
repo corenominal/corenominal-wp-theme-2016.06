@@ -28,3 +28,8 @@ require get_template_directory() . '/functions/taxonomies.php';
  * Metaboxes
  */
 require get_template_directory() . '/functions/metaboxes.php';
+
+/**
+ * Miscellaneous
+ */
+require get_template_directory() . '/functions/misc.php';
