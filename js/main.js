@@ -10,6 +10,38 @@
  *   Twitter: @corenominal
  *   From: Lincoln, United Kingdom
  */
+
+/**
+ * For Search UX, sets character position in given element
+ */
+jQuery.fn.selectRange = function(start, end)
+{
+    if(typeof end === 'undefined')
+    {
+        end = start;
+    }
+    return this.each(function()
+    {
+        if('selectionStart' in this)
+        {
+            this.selectionStart = start;
+            this.selectionEnd = end;
+        }
+        else if(this.setSelectionRange)
+        {
+            this.setSelectionRange(start, end);
+        }
+        else if(this.createTextRange)
+        {
+            var range = this.createTextRange();
+            range.collapse(true);
+            range.moveEnd('character', end);
+            range.moveStart('character', start);
+            range.select();
+        }
+    });
+};
+
 jQuery( document ).ready( function( $ )
 {
     /**
@@ -51,6 +83,11 @@ jQuery( document ).ready( function( $ )
  	{
         $( this ).addClass( 'text-link' );
     });
+    /**
+     * Prettier search input
+     */
+    var desc_width = $( '.site-description span' ).innerWidth();
+    $( '#s' ).css("max-width", desc_width);
 
     /**
      * Mobile menu
@@ -63,11 +100,43 @@ jQuery( document ).ready( function( $ )
         $( '#site-menu' ).slideToggle( 500 );
     });
 
+    /**
+	 * Search UX
+	 */
+    var s = $( '#s' ).val().trim();
+	if( s.length > 0 )
+	{
+		setTimeout(function()
+		{
+			$( '#s' ).focus();
+		}, 100 ); // timeout required for weird Chrome bug
+		if( s != '' )
+		{
+			var sl = s.length;
+			$( '#s' ).focus();
+			$( '#s' ).selectRange(sl);
+		}
+		$( '.search-form' ).on( 'submit',function(e)
+		{
+			var s = $( '#s' ).val().trim();
+			if( s === '' )
+			{
+				$( '#s' ).val('');
+				$( '#s' ).focus();
+				e.preventDefault();
+			}
+		});
+	}
+
+    /**
+     * Handle widow resizing
+     */
     var w = $( window ).width();
     $( window ).resize( function()
     {
         if ( $( window ).width()==w ) return;
         w = $( window ).width();
+        // fix mobile menu
         $( '#hamburger' ).removeClass( 'is-active' );
         if( w >= 750 )
         {
@@ -77,5 +146,8 @@ jQuery( document ).ready( function( $ )
         {
             $( '#site-menu' ).hide();
         }
+        // fix prettier search input
+        var desc_width = $( '.site-description span' ).innerWidth();
+        $( '#s' ).css("max-width", desc_width);
     });
 });

@@ -35,6 +35,24 @@ a:hover {
     display: none;
 }
 
+.search-input {
+    text-align: right;
+    border: 0;
+    border-bottom: 1px solid #333;
+	color: #c8c8c8;
+	background: #212121;
+	width: 100%;
+	padding: 0 0 6px 0;
+	border-radius: 0;
+    margin-bottom: 20px;
+    font-family: inherit;
+}
+.search-input:focus {
+	outline: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
 .page-title {
     color: #999;
     margin-bottom: 40px;

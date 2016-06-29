@@ -37,8 +37,12 @@ require get_template_directory() . '/meta.php';
 <?php else: ?>
 <h2 class="site-title"><a href="<?php bloginfo('url') ?>" title="<?php bloginfo('description') ?>"><?php bloginfo('name') ?></a></h2>
 <?php endif; ?>
-<?php //TODO: replace the below with a text widget ?>
-<p class="site-description"><strong><?php bloginfo('description'); ?></strong></p>
+
+<form class="search-form search-result" action="<?php echo site_url(); ?>" method="get">
+<input id="s" class="search-input" autocomplete="off" type="text" name="s" placeholder="SEARCH ..." value="<?php the_search_query(); ?>">
+</form>
+
+<p class="site-description"><span><?php bloginfo('description'); ?></span></p>
 
 <button id="hamburger" class="hamburger hamburger--spin" type="button">
   <span class="hamburger-box">

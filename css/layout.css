@@ -50,6 +50,10 @@ body {
     right: 0;
 }
 
+.masthead .search-form {
+    display: none;
+}
+
 .site-description {
     display: none;
 }
@@ -94,6 +98,9 @@ body {
         width: 190px;
         margin-right: 60px;
         text-align: right;
+    }
+    .masthead .search-form {
+        display: block;
     }
     .site-menu {
         display: block;
