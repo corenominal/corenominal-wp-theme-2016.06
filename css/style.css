@@ -35,6 +35,11 @@ a:hover {
     display: none;
 }
 
+.taxonomy-title {
+    color: #999;
+    margin-bottom: 40px;
+}
+
 .post h1 a,
 .post h2 a,
 a.text-link,
