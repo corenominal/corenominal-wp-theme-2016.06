@@ -2,7 +2,7 @@
 get_header();
 ?>
 <section class="content">
-    <h1 class="taxonomy-title">Tagged: <?php echo single_tag_title( '', false ) ?></h1>
+    <h1 class="page-title">Tagged: <?php echo single_tag_title( '', false ) ?></h1>
 <?php
 // The loop
 while ( have_posts() ) :
