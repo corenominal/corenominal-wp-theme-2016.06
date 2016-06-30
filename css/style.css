@@ -47,6 +47,9 @@ a:hover {
     margin-bottom: 20px;
     font-family: inherit;
 }
+.search-input.tags {
+    text-align: left;
+}
 .search-input:focus {
 	outline: 0;
     border-bottom: 1px solid #fff;
@@ -61,7 +64,8 @@ a:hover {
 .post h1 a,
 .post h2 a,
 a.text-link,
-.post footer a {
+.post footer a,
+.tags a {
     text-decoration: none;
     border-bottom: 1px solid #333;
 }
@@ -69,7 +73,8 @@ a.text-link,
 .post h1 a:hover,
 .post h2 a:hover,
 a.text-link:hover,
-.post footer a:hover {
+.post footer a:hover,
+.tags a:hover {
     text-decoration: none;
     border-bottom: 1px solid #fff;
 }
@@ -188,6 +193,14 @@ p.article-date a:hover {
     color: #212121;
 	border: 1px solid #fff;
 	cursor: pointer;
+}
+.tags {
+    overflow: hidden;
+}
+.tags li {
+    display: block;
+    float: left;
+    margin: 0 20px 0 20px;
 }
 
 svg {

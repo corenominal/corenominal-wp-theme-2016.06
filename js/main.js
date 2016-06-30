@@ -129,6 +129,54 @@ jQuery( document ).ready( function( $ )
 	}
 
     /**
+	 * Tag filter
+	 */
+	if( $( '#filter' ).length > 0 )
+	{
+		setTimeout(function()
+		{
+			$( '#filter' ).focus();
+		}, 100 ); // timeout required for weird Chrome bug
+	}
+	$( '#filter' ).on('input', function(e)
+	{
+		var filter = $(this).val().toLowerCase();
+		if( filter === '' )
+		{
+			$( '.tags li' ).show();
+		}
+		else
+		{
+			$( '.tags li' ).each( function( i )
+			{
+				var haystack = $( this ).text().toLowerCase();
+				if( haystack.indexOf( filter ) === -1 )
+				{
+					$( this ).removeClass( 'tag' );
+					$( this ).hide();
+				}
+				else
+				{
+					$( this ).addClass( 'tag' );
+					$( this ).show();
+				}
+			});
+		}
+		var c = $( '.tag' ).length;
+		if( c === 0 )
+		{
+			if( $( '#no-results' ).length === 0 )
+			{
+				$( '.content' ).append( '<p id="no-results" class="search-no-results">Nothing, bupkis, dick, diddly-squat, zilch :(</div>' );
+			}
+		}
+		else
+		{
+			$( '#no-results' ).remove();
+		}
+	});
+
+    /**
      * Handle widow resizing
      */
     var w = $( window ).width();
