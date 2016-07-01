@@ -107,7 +107,7 @@ body {
     }
     .site-menu .menu-item a {
         display: inline-block;
-        margin-bottom: 10px;
+        margin-bottom: 2px;
         padding: 0;
         font-weight: normal;
         border-bottom: 1px solid #212121;
