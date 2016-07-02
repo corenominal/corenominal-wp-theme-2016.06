@@ -1,5 +1,7 @@
 <aside class="sidebar">
 
-    foo
-    
+    <div>
+        foo
+    </div>
+
 </aside>
