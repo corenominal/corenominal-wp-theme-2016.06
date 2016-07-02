@@ -8,7 +8,7 @@ while ( have_posts() ) :
 the_post();
 ?>
 <h1 class="taxonomy-title">Browse Content by Tags</h1>
-<input id="filter" autocomplete="off" class="search-input tags" type="text" value="" placeholder="Filter ...">
+<input id="filter-tags" autocomplete="off" class="search-input tags" type="text" value="" placeholder="Filter ...">
 <ul class="tags">
 <?php
 $args = array(

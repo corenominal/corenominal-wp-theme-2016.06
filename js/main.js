@@ -129,16 +129,78 @@ jQuery( document ).ready( function( $ )
 	}
 
     /**
-	 * Tag filter
+	 * Archives filter
 	 */
-	if( $( '#filter' ).length > 0 )
+	if( $( '#filter-archives' ).length > 0 )
 	{
 		setTimeout(function()
 		{
-			$( '#filter' ).focus();
+			$( '#filter-archives' ).focus();
 		}, 100 ); // timeout required for weird Chrome bug
 	}
-	$( '#filter' ).on('input', function(e)
+    $( '#filter-archives' ).on('input', function(e)
+	{
+        var filter = $(this).val().toLowerCase();
+		if( filter === '' )
+		{
+			$( 'li.date' ).show();
+            $( 'li.title' ).show();
+		}
+        else
+		{
+			$( 'li.title' ).each( function( i )
+			{
+				var haystack = $( this ).text().toLowerCase();
+				if( haystack.indexOf( filter ) === -1 )
+				{
+					$( this ).removeClass( 'result' );
+					$( this ).hide();
+				}
+				else
+				{
+					$( this ).addClass( 'result' );
+					$( this ).show();
+				}
+			});
+            $( 'ul.month' ).each( function( i )
+            {
+                month = $( this );
+                var m = month.children('.result').length;
+                if( m == 0 )
+                {
+                    month.hide();
+                }
+                else
+                {
+                    month.show();
+                }
+            });
+		}
+        var c = $( '.result' ).length;
+		if( c === 0 )
+		{
+			if( $( '#no-results' ).length === 0 )
+			{
+				$( '.content' ).append( '<p id="no-results" class="search-no-results">Nothing, bupkis, dick, diddly-squat, zilch :(</div>' );
+			}
+		}
+		else
+		{
+			$( '#no-results' ).remove();
+		}
+    });
+
+    /**
+	 * Tag filter
+	 */
+	if( $( '#filter-tags' ).length > 0 )
+	{
+		setTimeout(function()
+		{
+			$( '#filter-tags' ).focus();
+		}, 100 ); // timeout required for weird Chrome bug
+	}
+	$( '#filter-tags' ).on('input', function(e)
 	{
 		var filter = $(this).val().toLowerCase();
 		if( filter === '' )
