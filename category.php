@@ -3,17 +3,7 @@ get_header();
 ?>
 <section class="content">
 <?php
-switch ( strtolower( single_cat_title( '', false ) ) )
-{
-	case 'posts':
-		echo '<h1 class="page-title">Category: Notes</h1>';
-		break;
-
-	default:
-		echo '<h1 class="page-title">Category: ' . single_cat_title( '', false ) . '</h1>';
-		break;
-}
-// The loop
+echo '<h1 class="page-title">Category: ' . single_cat_title( '', false ) . '</h1>';
 while ( have_posts() ) :
 the_post();
 $categories = get_the_category();
