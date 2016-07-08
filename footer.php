@@ -21,5 +21,30 @@
 </footer>
 <?php wp_footer() ?>
 </div> <!-- page -->
+<script type="application/ld+json">
+[{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "corenominal",
+  "url" : "https://corenominal.org",
+  "logo": "https://corenominal.org/logo.png",
+  "sameAs" : [ "http://www.facebook.com/corenominal",
+    "http://www.twitter.com/corenominal",
+    "https://plus.google.com/+PhilipNewborough",
+    "https://github.com/corenominal",
+    "https://codepen.io/corenominal",
+    "https://uk.linkedin.com/in/corenominal",
+    "https://www.reddit.com/user/corenominal"]
+},
+{
+   "@context": "http://schema.org",
+   "@type": "WebSite",
+   "url": "https://corenominal.org/",
+   "potentialAction": {
+     "@type": "SearchAction",
+     "target": "https://corenominal.org/?s={search_term_string}",
+     "query-input": "required name=search_term_string"
+   }
+}]
+</script>
 </body>
 </html>
