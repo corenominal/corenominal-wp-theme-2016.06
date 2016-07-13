@@ -162,12 +162,14 @@ body {
         display: block;
         float: right;
     }
-    .sidebar div {
-        margin-top: 300px;
+    .sidebar .hilight {
+        display: block;
+        margin-top: 200px;
         width: 150px;
-        height: 150px;
-        background: #c8c8c8;
-        color: #212121;
+    }
+
+    .sidebar svg {
+        max-width: 150px;
     }
 
 }
