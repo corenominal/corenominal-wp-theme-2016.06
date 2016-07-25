@@ -15,6 +15,7 @@ if ( have_posts() ) :
     <?php the_excerpt() ?>
     </div>
     <footer>
+        <?php if( $post->post_type == 'post' ): ?>
         <p class="meta">
             <svg class="icon tags" id="svg3441" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.055445 16.000001" height="4.5156mm" width="5.6601mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" class="tags">
              <metadata id="metadata3446">
@@ -35,6 +36,7 @@ if ( have_posts() ) :
             <span class="sr-only">Tags: </span>
             <?php the_tags( '' ) ?>
         </p>
+        <?php endif; ?>
     </footer>
     </article>
 <?php
