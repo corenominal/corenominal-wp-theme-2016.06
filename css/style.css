@@ -109,7 +109,7 @@ p.article-date a:hover {
 .e-content hr {
     border: 0;
     height: 0;
-    border-top: 1px solid #1c1c1c;
+    border-top: 1px solid #333;
     border-bottom: 0px solid #333;
     margin-bottom: 20px;
 }

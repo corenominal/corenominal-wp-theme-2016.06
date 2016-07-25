@@ -18,6 +18,14 @@ function corenominal_enqueue_scripts()
     	 wp_enqueue_style( 'corenominal_layout', get_template_directory_uri() . '/css/layout.css', false );
     	 wp_enqueue_style( 'corenominal_shame', get_template_directory_uri() . '/css/shame.css', false );
 
+         /**
+          * Conditional CSS
+          */
+         if( is_page( $page = 'projects' ) )
+         {
+             wp_enqueue_style( 'corenominal_page_projects', get_template_directory_uri() . '/css/page-projects.css', false );
+         }
+
         /**
          * JavaScript
          */
