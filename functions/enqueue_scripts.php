@@ -21,9 +21,14 @@ function corenominal_enqueue_scripts()
          /**
           * Conditional CSS
           */
-         if( is_page( $page = 'projects' ) )
+         if( is_page( 'projects' ) )
          {
              wp_enqueue_style( 'corenominal_page_projects', get_template_directory_uri() . '/css/page-projects.css', false );
+         }
+
+         if( is_page_template( 'page_project.php' ) )
+         {
+             wp_enqueue_style( 'corenominal_page_projects', get_template_directory_uri() . '/css/page-project.css', false );
          }
 
         /**
