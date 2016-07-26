@@ -2,7 +2,7 @@
 <article class="h-entry post link">
 <?php if( is_single() ): ?>
 <h1>
-<a class="p-name" href="<?php echo $the_link[0] ?>" target="_blank"><?php the_title() ?>
+<a class="p-name" href="<?php echo $the_link[0] ?>"><?php the_title() ?>
     <svg class="icon external-link" id="svg3385" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="4.5156mm" width="5.2681mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 18.666659 15.999999">
      <metadata id="metadata3390">
       <rdf:RDF>
@@ -21,7 +21,7 @@
 </h1>
 <?php else: ?>
 <h2>
-<a class="p-name" href="<?php echo $the_link[0] ?>" target="_blank"><?php the_title() ?>
+<a class="p-name" href="<?php echo $the_link[0] ?>"><?php the_title() ?>
     <svg class="icon external-link" id="svg3385" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="4.5156mm" width="5.2681mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 18.666659 15.999999">
      <metadata id="metadata3390">
       <rdf:RDF>
