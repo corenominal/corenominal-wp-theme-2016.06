@@ -216,6 +216,7 @@ p.article-date a:hover {
 .archives li.title {
     position: relative;
     margin-left: 20px;
+    margin-bottom: 2px;
 }
 .archives li.title span {
     display: block;
@@ -227,11 +228,17 @@ p.article-date a:hover {
 .archives li.title a {
     display: block;
     margin-left: 30px;
+    border-bottom: none;
+}
+.archives li.title a:hover {
+    display: block;
+    margin-left: 30px;
+    border-bottom: none;
 }
 ul.related-posts li {
     position: relative;
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 2px 0;
 }
 ul.related-posts span {
     display: block;
@@ -243,9 +250,13 @@ ul.related-posts span {
 ul.related-posts a {
     display: block;
     margin-left: 100px;
-    border-bottom: 1px solid #212121;
+    border-bottom: none;
+    color: #c8c8c8;
 }
-
+ul.related-posts a:hover {
+    border-bottom: none;
+    color: #fff;
+}
 /*svg {
     width: auto;
 	height: auto;
