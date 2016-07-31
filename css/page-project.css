@@ -19,6 +19,7 @@ a.btn {
     width: 100%;
     border: 1px solid #414141;
     text-align: center;
+    text-transform: uppercase;
 }
 a.btn:hover {
     border: 1px solid #515151;
