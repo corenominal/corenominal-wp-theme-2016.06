@@ -130,8 +130,16 @@ p.article-date a:hover {
     list-style-type: decimal;
 }
 
-.post footer .meta {
+.post footer p.meta {
     margin-bottom: 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+.post footer p.meta svg {
+    position: absolute;
+    top: 8px;
+    left: 0;
 }
 
 .comments {
