@@ -287,6 +287,7 @@ svg.copyleft {
 }
 
 code {
+    font-family: "Menlo", "Consolas", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Monaco", monospace;
 	background-color:#1c1c1c;
 	color:#c8c8c8;
 	border:none;
@@ -294,6 +295,7 @@ code {
 }
 
 pre {
+    font-family: "Menlo", "Consolas", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Monaco", monospace;
 	white-space:pre;
 	white-space:pre-wrap;
 	background-color:#1c1c1c;
