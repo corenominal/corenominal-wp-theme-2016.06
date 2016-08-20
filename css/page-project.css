@@ -13,17 +13,18 @@
 
 a.btn {
     display: inline-block;
-    background: #313131;
-    color: #c8c8c8;
+    background: #fff;
+    color: #212121;
     padding: 4px 0;
     width: 100%;
-    border: 1px solid #414141;
+    border: 1px solid #999;
     text-align: center;
     text-transform: uppercase;
 }
 a.btn:hover {
-    border: 1px solid #515151;
+    border: 1px solid #212121;
     color: #fff;
+    background: #212121;
 }
 a.btn.btn-github-clone {
     width: 49%;
@@ -45,15 +46,16 @@ ul.latest-github-commits span {
     position: absolute;
     left: 0;
     top: 0;
-    color: #666;
+    color: #999;
 }
 ul.latest-github-commits a {
     display: block;
     margin-left: 100px;
-    border-bottom: none;
-    color: #c8c8c8;
+    border-bottom: 1px solid #fff;
+    color: #212121;
 }
 ul.latest-github-commits a:hover {
     border-bottom: none;
-    color: #fff;
+    border-bottom: 1px solid #999;
+    color: #212121;
 }

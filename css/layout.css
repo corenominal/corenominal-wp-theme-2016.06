@@ -110,11 +110,11 @@ body {
         margin-bottom: 2px;
         padding: 0;
         font-weight: normal;
-        border-bottom: 1px solid #212121;
+        border-bottom: 1px solid #fff;
     }
     .site-menu .menu-item a:hover {
         text-decoration: none;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #212121;
     }
     .site-description {
         display: inline-block;

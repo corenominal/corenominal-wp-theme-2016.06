@@ -42,9 +42,9 @@ p, h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, pre {
 }
 
 blockquote {
-	padding: 0 20px;
+    padding: 0 20px;
     margin-left: 20px;
-    border-left: 1px solid #ddd;
+    border-left: 2px solid #212121;
 }
 
 blockquote p:last-child {
