@@ -247,8 +247,7 @@ jQuery( document ).ready( function( $ )
         if ( $( window ).width()==w ) return;
         w = $( window ).width();
         // fix mobile menu
-        $( '#hamburger' ).removeClass( 'is-active' );
-        if( w >= 750 )
+        if( w >= 791 )
         {
             $( '#site-menu' ).show();
         }
