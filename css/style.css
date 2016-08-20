@@ -58,6 +58,16 @@ a:hover {
     color: #212121;
 }
 
+.hamburger {
+    border: 1px solid #212121;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    background: #fff;
+    color: #212121;
+    cursor: pointer;
+}
+
 .page-title {
     color: #212121;
     margin-bottom: 40px;
