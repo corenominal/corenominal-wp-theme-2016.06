@@ -42,7 +42,7 @@ require get_template_directory() . '/meta.php';
 <input id="s" class="search-input" autocomplete="off" type="text" name="s" placeholder="SEARCH ..." value="<?php the_search_query(); ?>">
 </form>
 
-<p class="site-description"><span>Full stack web developer, interested in all the things, but especially the web, code, design, Linux, PHP, WordPress, JavaScript &amp; robots.</span></p>
+<p class="site-description"><span>Full stack web developer, interested in all the things, but especially the web, code, design, Linux, OS X, PHP, WordPress, JavaScript &amp; robots.</span></p>
 
 <button id="hamburger" class="hamburger" type="button">
 
