@@ -71,6 +71,7 @@ body {
 
 .previous_posts_link {
     text-align: right;
+    float: right;
 }
 
 .page-footer {
