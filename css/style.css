@@ -354,5 +354,5 @@ pre code {
 	height: 100%;
 	overflow: hidden;
 }
-::-moz-selection { background: #fff; color:#212121 }
-::selection { background: #fff; color:#212121 }
+::-moz-selection { background: #212121; color:#fff }
+::selection { background: #212121; color:#fff }
