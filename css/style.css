@@ -252,6 +252,7 @@ p.article-date a:hover {
     display: block;
     margin-left: 30px;
     border-bottom: none;
+    text-decoration: underline;
 }
 ul.related-posts li {
     position: relative;
@@ -266,14 +267,15 @@ ul.related-posts span {
     color: #999;
 }
 ul.related-posts a {
-    display: block;
+    display: inline-block;
     margin-left: 100px;
-    border-bottom: 1px solid #fff;
+    border-bottom: none;
     color: #212121;
 }
 ul.related-posts a:hover {
-    border-bottom: 1px solid #999;
+    border-bottom: none;
     color: #212121;
+    text-decoration: underline;
 }
 /*svg {
     width: auto;

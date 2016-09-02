@@ -51,11 +51,11 @@ ul.latest-github-commits span {
 ul.latest-github-commits a {
     display: block;
     margin-left: 100px;
-    border-bottom: 1px solid #fff;
+    border-bottom: none;
     color: #212121;
 }
 ul.latest-github-commits a:hover {
     border-bottom: none;
-    border-bottom: 1px solid #999;
+    text-decoration: underline;
     color: #212121;
 }
