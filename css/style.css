@@ -301,10 +301,11 @@ svg.copyleft {
 
 code {
     font-family: "Menlo", "Consolas", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Monaco", monospace;
-	background-color:#1c1c1c;
-	color:#c8c8c8;
+	background-color: #e5e5e5;
+	color: #1c1c1c;
 	border:none;
 	white-space:nowrap;
+    font-size: 96%;
 }
 
 pre {
@@ -319,7 +320,8 @@ pre {
 	padding:5px 10px;
 }
 pre code {
-	background:transparent;
+	background: #1c1c1c;
+    color:#c8c8c8;
 	border:none;
 	white-space:pre;
 }
