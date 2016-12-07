@@ -10,6 +10,11 @@
 require get_template_directory() . '/functions/theme_support.php';
 
 /**
+ * Custom RSS feeds
+ */
+require get_template_directory() . '/functions/feeds.php';
+
+/**
  * Enqueue scripts
  */
 require get_template_directory() . '/functions/enqueue_scripts.php';
