@@ -1,0 +1,84 @@
+.pwgenWEB {
+	margin-bottom: 20px;
+}
+
+input.password {
+	width: 100%;
+	font-size: 28px;
+	line-height: 28px;
+	height: 48px;
+	font-family: "Menlo", "Consolas", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Monaco", monospace;
+	background: #fff;
+	color: #1a1a1a;
+	border: 0;
+	border-bottom: 4px #1a1a1a solid;
+	padding: 2px 0;
+	outline: none;
+	margin-bottom: 10px;
+	-webkit-transition: all ease-out .4s;
+	-moz-transition: all ease-out .4s;
+	-o-transition: all ease-out .4s;
+	transition: all ease-out .4s;
+}
+
+input.password.success,
+input.password.success:active,
+input.password.success:focus {
+	background: #1a1a1a;
+	color: #fff;
+}
+
+.label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+button {
+    display: inline-block;
+    background: #fff;
+    color: #1a1a1a;
+    padding: 8px 12px;
+    border: 1px #1a1a1a solid;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: inherit;
+    cursor: pointer;
+    box-shadow: 0 6px #1a1a1a;
+	-webkit-transition: all ease-out .1s;
+	-moz-transition: all ease-out .1s;
+	-o-transition: all ease-out .1s;
+	transition: all ease-out .1s;
+	position: relative;
+}
+
+button:hover {
+    color: #1a1a1a;
+    background: #fff;
+}
+
+button:hover {
+  top: 2px;
+  box-shadow: 0 4px #1a1a1a;
+}
+
+button:active {
+  top: 4px;
+  box-shadow: 0 2px #1a1a1a;
+  -webkit-appearance: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.pwgen-notify {
+	min-height: 60px;
+}
+
+.alert {
+	display: inline-block;
+	padding: 8px 12px;
+	margin-top: 20px;
+	background: #1a1a1a;
+	color: #fff;
+}
