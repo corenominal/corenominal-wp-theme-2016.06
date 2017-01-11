@@ -1,4 +1,4 @@
-<?php /* Template Name: Project Page */
+<?php /* Template Name: pwgenweb */
 get_header();
 ?>
 <section class="content project">
