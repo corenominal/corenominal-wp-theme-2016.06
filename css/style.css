@@ -131,6 +131,24 @@ p.article-date a:hover {
     max-width: 100%;
 }
 
+.wp-caption img {
+    max-width: 100%;
+}
+
+.wp-caption {
+    max-width: 100%;
+    background: #1a1a1a;
+    color: #c8c8c8;
+    padding: 10px;
+    margin-bottom: 20px;
+    /*box-shadow: 0 2px 2px 0 rgba(0,0,0,.4),0 0 2px 0 rgba(0,0,0,.12);*/
+}
+
+.wp-caption p.wp-caption-text {
+    margin-bottom: 0;
+    color: #c8c8c8;
+}
+
 .e-content ul li {
     margin-left: 20px;
     list-style-type: disc;
